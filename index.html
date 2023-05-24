@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MetaWikis Websites Index</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+<h1>MetaWikis Websites Index</h1>
+<ul>
+{% for file in site.html_files %}
+<li><a href="{{ file.url }}">{{ file.name }}</a></li>
+{% endfor %}
+</ul>
+</div>
+</body>
+</html>

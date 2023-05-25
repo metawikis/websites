@@ -1,0 +1,177 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+    background-color: #EEEEEE;
+
+}
+
+/* Body */
+body {
+  font-family: Roboto, sans-serif;
+  color: #FF00FF;
+}
+
+/* Header */
+.header {
+  background-color: #FF00FF;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #FF00FF;
+}
+
+/* Nav */
+.nav {
+  margin-top: 20px;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #FF00FF;
+}
+
+/* Main */
+.main {
+  margin-top: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FF00FF;
+}
+
+.p {
+  margin-bottom: 10px;
+}
+
+/* Button */
+.button {
+  background-color: #FF00FF;
+  color: #FF00FF;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #FF00FF;
+  color: #FF00FF;
+}
+
+/* Footer */
+.footer {
+  background-color: #FF00FF;
+  padding: 20px;
+}
+
+.footer p {
+  text-align: center;
+}
+
+/* Magenta Theme */
+.magenta-theme {
+  color: #FF00FF;
+}
+
+.magenta-theme a {
+  color: #FF00FF;
+}
+
+.magenta-theme h1 {
+  color: #FF00FF;
+}
+
+.magenta-theme h2 {
+  color: #FF00FF;
+}
+
+.magenta-theme p {
+  color: #FF00FF;
+}
+
+.magenta-theme .button {
+  background-color: #ff00ff;
+}
+
+.magenta-theme .button:hover {
+  background-color: #FF00FF;
+  color: #ff00ff;
+}
+
+/* Light Magenta Theme */
+.light-magenta-theme {
+  color: #FF00FF;
+}
+
+.light-magenta-theme a {
+  color: #FF00FF;
+}
+
+.light-magenta-theme h1 {
+  color: #FF00FF;
+}
+
+.light-magenta-theme h2 {
+  color: #FF00FF;
+}
+
+.light-magenta-theme p {
+  color: #FF00FF;
+}
+
+.light-magenta-theme .button {
+  background-color: #ffe4e1;
+}
+
+.light-magenta-theme .button:hover {
+  background-color: #FF00FF;
+  color: #ffe4e1;
+}
+
+/* Magenta Colors */
+.magenta-theme {
+  color: #ff00ff;
+}
+
+.magenta-theme a {
+  color: #ff00ff;
+}
+
+.magenta-theme h1 {
+  color: #ff00ff;
+}
+
+.magenta-theme h2 {
+  color: #ff00ff;
+}
+
+.magenta-theme p {
+  color: #ff00ff;
+}

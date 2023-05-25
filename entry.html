@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Social Media Website</title>
+  <link rel="stylesheet" href="style.css">
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Material Design 3 Card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/4.0.0-beta.3/material-components-web.min.css">
+
+</head>
+
+<body class="magenta-theme">
+  <div class="card magenta-theme">
+    <div class="card-header magenta-theme">
+      <h2 class="magenta-theme">Card Title</h2>
+    </div>
+    <div class="card-body magenta-theme">
+      <p class="magenta-theme">This is a card. Cards are a great way to display information in a visually appealing and easy-to-read way.</p>
+    </div>
+    <div class="card-footer magenta-theme">
+      <a href="#">Learn more</a>
+    </div>
+  </div>
+
+
+    <section id="content" class="magenta-theme">
+      <h2 class="magenta-theme">Post</h2>
+      <p class="magenta-theme">This is a post on a social media website. You can use this space to share your thoughts, feelings, and experiences with the world.</p>
+      <form action="/post" method="post" class="magenta-theme">
+        <input type="text" name="title" placeholder="Title" class="magenta-theme">
+        <textarea name="content" placeholder="Content" class="magenta-theme"></textarea>
+        <input type="submit" value="Post" class="magenta-theme">
+      </form>
+
+
+    <section id="content" class="magenta-theme">
+      <h2 class="magenta-theme">Boolean Value</h2>
+      <div><p class="magenta-theme">This is the value of the boolean variable:</p></div>
+      <p id="boolean-value" class="magenta-theme"></p>
+      <button type="button" class="magenta-theme button" onclick="toggleBooleanValue()">Toggle Boolean Value</button>
+    </section><input type="checkbox" id="mySwitch" class="magenta-theme">
+<label for="mySwitch" class="magenta-theme switch">Done</label>
+  </main></div>
+
+  <footer class="magenta-theme">
+    <p class="magenta-theme">Copyright &copy; 2023 Social Media Website</p>
+  </footer>
+</body>
+<script>
+function toggleBooleanValue() {
+  const booleanValue = document.getElementById("boolean-value");
+  if (booleanValue.textContent === "True") {
+    booleanValue.textContent = "False";
+  } else {
+    booleanValue.textContent = "True";
+  }
+}
+</script>

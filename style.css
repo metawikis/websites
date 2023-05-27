@@ -1,10 +1,32 @@
-/* Reset */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-    background-color: #EEEEEE;
 
+
+
+
+.magenta-theme {
+  --mdc-theme-primary: #FF00FF;
+  --mdc-theme-on-primary: #ffffff;
+  --mdc-theme-secondary: #ffe4e1;
+  --mdc-theme-on-secondary: #000000;
+  --mdc-theme-error: #ff0000;
+  --mdc-theme-on-error: #ffffff;
+  --mdc-theme-warning: #ffa500;
+  --mdc-theme-on-warning: #ffffff;
+  --mdc-theme-info: #00BCD4;
+  --mdc-theme-on-info: #ffffff;
+  --mdc-theme-accent: #00BCD4;
+  --mdc-theme-on-accent: #ffffff;
+  --mdc-theme-background: #ffffff;
+  --mdc-theme-on-background: #000000;
+  --mdc-theme-surface: #ffffff;
+  --mdc-theme-on-surface: #000000;
+  --mdc-theme-outline: #000000;
+  --mdc-theme-on-outline: #ffffff;
+  --mdc-theme-focus: #00BCD4;
+  --mdc-theme-on-focus: #ffffff;
+  --mdc-theme-hover: #00BCD4;
+  --mdc-theme-on-hover: #ffffff;
+  --mdc-theme-active: #00BCD4;
+  --mdc-theme-on-active: #ffffff;
 }
 
 /* Body */
@@ -14,165 +36,147 @@ body {
 }
 
 /* Header */
-.header {
-  background-color: #FF00FF;
-  padding: 20px;
-}
-
-.header h1 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #FF00FF;
-}
-
-/* Nav */
-.nav {
-  margin-top: 20px;
-}
-
-.nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.nav a {
-  text-decoration: none;
-  color: #FF00FF;
-}
-
-/* Main */
-.main {
-  margin-top: 20px;
-}
-
-.section {
-  margin-bottom: 20px;
-}
-
-.content {
-  padding: 20px;
-}
-
-.h2 {
-  font-size: 16px;
-  font-weight: 700;
-  color: #FF00FF;
-}
-
-.p {
-  margin-bottom: 10px;
-}
-
-/* Button */
-.button {
-  background-color: #FF00FF;
-  color: #FF00FF;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #FF00FF;
-  color: #FF00FF;
-}
-
-/* Footer */
-.footer {
-  background-color: #FF00FF;
-  padding: 20px;
-}
-
-.footer p {
-  text-align: center;
-}
-
 /* Magenta Theme */
-.magenta-theme {
-  color: #FF00FF;
-}
-
 .magenta-theme a {
-  color: #FF00FF;
+  color: var(--mdc-theme-primary);
 }
 
 .magenta-theme h1 {
-  color: #FF00FF;
+  color: var(--mdc-theme-primary);
 }
 
 .magenta-theme h2 {
-  color: #FF00FF;
+  color: var(--mdc-theme-primary);
 }
 
 .magenta-theme p {
-  color: #FF00FF;
+  color: var(--mdc-theme-primary);
 }
 
 .magenta-theme .button {
-  background-color: #ff00ff;
+  background-color: var(--mdc-theme-primary);
 }
 
 .magenta-theme .button:hover {
-  background-color: #FF00FF;
-  color: #ff00ff;
+  background-color: var(--mdc-theme-primary);
+  color: var(--mdc-theme-on-primary);
 }
 
-/* Light Magenta Theme */
-.light-magenta-theme {
-  color: #FF00FF;
+input {
+  /* Required */
+  width: 100%;
+  height: 40px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #9B0B90;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  outline: none;
+  transition: 0.2s;
+
+  /* Optional */
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+  &:focus {
+    border-color: #C218C2;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  }
 }
 
-.light-magenta-theme a {
-  color: #FF00FF;
+textarea {
+  /* Required */
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #9B0B90;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  resize: none;
+
+  /* Optional */
+  outline: none;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+  &:focus {
+    border-color: #C218C2;
+  }
 }
 
-.light-magenta-theme h1 {
-  color: #FF00FF;
+button {
+  /* Required */
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #9B0B90;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  /* Optional */
+  transition: 0.2s;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background-color: #C218C2;
+  }
+
+  &:active {
+    outline: none;
+    background-color: #7A077A;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
 }
 
-.light-magenta-theme h2 {
-  color: #FF00FF;
+/* Button */
+.mdc-button {
+  background-color: #9B0B90;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  /* Optional */
+  transition: 0.2s;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background-color: #C218C2;
+  }
+
+  &:active {
+    outline: none;
+    background-color: #7A077A;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
 }
 
-.light-magenta-theme p {
-  color: #FF00FF;
+/* Input */
+.mdc-text-field {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 2px solid #E0E0E0;
+  font-size: 16px;
+  outline: none;
+  transition: 0.2s;
 }
 
-.light-magenta-theme .button {
-  background-color: #ffe4e1;
+.mdc-text-field:focus {
+  border-color: #C218C2;
 }
 
-.light-magenta-theme .button:hover {
-  background-color: #FF00FF;
-  color: #ffe4e1;
+/* Textarea */
+.mdc-text-area {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #E0E0E0;
+  font-size: 16px;
+  resize: none;
 }
-
-/* Magenta Colors */
-.magenta-theme {
-  color: #ff00ff;
-}
-
-.magenta-theme a {
-  color: #ff00ff;
-}
-
-.magenta-theme h1 {
-  color: #ff00ff;
-}
-
-.magenta-theme h2 {
-  color: #ff00ff;
-}
-
-.magenta-theme p {
-  color: #ff00ff;
-}
-  <link rel="stylesheet" href="">

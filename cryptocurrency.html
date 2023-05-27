@@ -1,62 +1,70 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="style.css">
-</meta>
+  <title>My Marketplace</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link rel="stylesheet" href="https://material.io/components/material-components-web/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      --mdc-theme-primary: #9B0B90;
+      --mdc-theme-on-primary: #FFFFFF;
+    }
+  </style>
 </head>
 <body>
-  <h1 class="text-center">My Marketplace</h1>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Profile_icon_2020.svg/1200px-Profile_icon_2020.svg.png" class="rounded-circle mr-2" alt="User avatar">
+  <mdc-card>
+    <h1 class="text-center">My Marketplace</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Profile_icon_2020.svg/1200px-Profile_icon_2020.svg.png" class="rounded-circle mr-2" alt="User avatar">
+        </div>
+        <div class="col-md-9">
+          <h2 class="mb-0">Bard</h2>
+          <p class="mb-0">@bard</p>
+          <p>This is my marketplace. I can buy and sell physical goods here using cryptocurrency.</p>
+        </div>
       </div>
-      <div class="col-md-9">
-        <h2 class="mb-0">Bard</h2>
-        <p class="mb-0">@bard</p>
-        <p>This is my marketplace. I can buy and sell physical goods here using cryptocurrency.</p>
-      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Buy</h3>
+          <ul class="mdc-list">
+            <li class="mdc-list-item mdc-list-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">iPhone 13 Pro</h5>
+                <small class="text-muted">\$1,000</small>
+              </div>
+              <p>This is a brand new iPhone 13 Pro.</p>
+            </li>
+            <li class="mdc-list-item mdc-list-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">AirPods Pro</h5>
+                <small class="text-muted">\$250</small>
+              </div>
+              <p>This is a pair of brand new AirPods Pro.</p>
+            </li>
+            <li class="mdc-list-item mdc-list-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Apple Watch Series 7</h5>
+                <small class="text-muted">\$400</small>
+              </div>
+              <p>This is a brand new Apple Watch Series 7.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Sell</h3>
+          <form action="/" method="post">
+            <input class="mdc-text-field" type="text" name="item" placeholder="Item">
+            <input class="mdc-text-field" type="text" name="price" placeholder="Price">
+            <button class="mdc-button">Sell</button>
+          </form>
+        </div>
+      </div>  <footer class="magenta-theme">
+        <p class="magenta-theme">Copyright &copy; 2023 Social Media Website</p>
+      </footer>
     </div>
-    <div class="row">
-      <div class="col-md-6">
-        <h3>Buy</h3>
-        <ul class="list-group">
-          <li class="list-group-item list-group-item-action">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">iPhone 13 Pro</h5>
-              <small class="text-muted">\$1,000</small>
-            </div>
-            <p>This is a brand new iPhone 13 Pro.</p>
-          </li>
-          <li class="list-group-item list-group-item-action">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">AirPods Pro</h5>
-              <small class="text-muted">\$250</small>
-            </div>
-            <p>This is a pair of brand new AirPods Pro.</p>
-          </li>
-          <li class="list-group-item list-group-item-action">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">Apple Watch Series 7</h5>
-              <small class="text-muted">\$400</small>
-            </div>
-            <p>This is a brand new Apple Watch Series 7.</p>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <h3>Sell</h3>
-        <form action="/" method="post">
-          <input type="text" name="item" placeholder="Item">
-          <input type="text" name="price" placeholder="Price">
-          <input type="submit" value="Sell">
-        </form>
-      </div>
-    </div>  <footer class="magenta-theme">
-    <p class="magenta-theme">Copyright &copy; 2023 Social Media Website</p>
-  </footer>
-  </div>
+  </mdc-card>
 </body>
 </html>

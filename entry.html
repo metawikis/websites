@@ -1,65 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Social Media Website</title>
-<meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="style.css">
-</meta>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Material Design 3 Card</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/4.0.0-beta.3/material-components-web.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-  <link rel="stylesheet" href="https://material.io/components/material-components-web/dist/material-components-web.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="material-components-web.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            --mdc-theme-primary: #9B0B90;
+            --mdc-theme-on-primary: #FFFFFF;
+        }
+    </style>
+    <script src="material-components-web.js"></script>
+    <title>Social Media Mail</title>
 </head>
 
 <body class="magenta-theme">
-  <mdc-card>
-    <mdc-card-header>
-      <h2 class="magenta-theme">Card Title</h2>
-    </mdc-card-header>
-    <mdc-card-body>
-      <p class="magenta-theme">This is a card. Cards are a great way to display information in a visually appealing and easy-to-read way.</p>
-    </mdc-card-body>
-    <mdc-card-footer>
-      <a href="#">Learn more</a>
-    </mdc-card-footer>
-  </mdc-card>
-
 
     <section id="content" class="magenta-theme">
-      <h2 class="magenta-theme">Post</h2>
-      <p class="magenta-theme">This is a post on a social media website. You can use this space to share your thoughts, feelings, and experiences with the world.</p>
-      <form action="/post" method="post" class="magenta-theme">
-        <input class="mdc-text-field" type="text" name="title" placeholder="Title">
-        <textarea class="mdc-text-area" name="content" placeholder="Content"></textarea>
-        <button class="mdc-button" type="submit">Post</button>
-      </form>
 
-
-    <section id="content" class="magenta-theme">
-      <h2 class="magenta-theme">Boolean Value</h2>
-      <div><p class="magenta-theme">This is the value of the boolean variable:</p></div>
-      <p id="boolean-value" class="magenta-theme"></p>
-      <button class="mdc-button" type="button" onclick="toggleBooleanValue()">Toggle Boolean Value</button>
+        <div class="mdc-card mdc-card--raised">
+            <mdc-card-body>
+                <p class="magenta-theme">This is a post on a social media website. You can use this space to share your thoughts, feelings, and experiences with the world.</p>
+                <form action="/post" method="post" class="magenta-theme">
+                    <input class="mdc-text-field" type="text" name="title" placeholder="Title">
+                    <textarea class="mdc-text-area" name="content" placeholder="Content"></textarea>
+                    <button class="mdc-button" type="submit">Post</button>
+                </form>
+            </mdc-card-body>
+        </div>
     </section>
 
-  </main></div>
+    <div class="mdc-card mdc-card--raised">
+        <h2 class="magenta-theme">Boolean Value</h2>
+        <div><p class="magenta-theme">This is the value of the boolean variable:</p></div>
+        <p id="boolean-value" class="magenta-theme"></p>
+        <button class="mdc-button" type="button" onclick="toggleBooleanValue()">Toggle Boolean Value</button>
+    </div>
+    </p>
 
-  <footer class="magenta-theme">
-    <p class="magenta-theme">Copyright &copy; 2023 Social Media Website</p>
-  </footer>
+
+    <section>
+
+        <footer class="mdc-footer">
+            <div class="mdc-typography">
+                <p class="magenta-theme"><a href="index.html">Copyright &copy; 2023 My Twitter Clone</a></p>
+                <ul class="mdc-chips">
+                    <li class="mdc-chip">
+                        <a href="index2.html">Facebook</a>
+                    </li>
+                    <li class="mdc-chip">
+                        <a href="index3.html">Reddit</a>
+                    </li>
+                    <li class="mdc-chip">
+                        <a href="index4.html">404</a>
+                    </li>
+                    <li class="mdc-chip">
+                        <a href="copypasta.html">Copypasta</a>
+                    </li>
+                    <li class="mdc-chip">
+                        <a href="cryptocurrency.html">Shop</a>
+                    </li>
+                    <li class="mdc-chip">
+                        <a href="entry.html">Post</a>
+                    </li>
+                    <li class="mdc-chip">
+                        <a href="pics.html">Pics</a>
+                    </li>
+                    <li class="mdc-chip">
+                        <a href="secrets.html">Mail</a>
+                    </li>
+                    <li class="mdc-chip">
+                        <a href="wiki.html">Social Media</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        function toggleBooleanValue() {
+            const booleanValue = document.getElementById("boolean-value");
+            if (booleanValue.textContent === "True") {
+                booleanValue.textContent = "False";
+            } else {
+                booleanValue.textContent = "True";
+            }
+        }
+    </script>
 </body>
-<script>
-function toggleBooleanValue() {
-  const booleanValue = document.getElementById("boolean-value");
-  if (booleanValue.textContent === "True") {
-    booleanValue.textContent = "False";
-  } else {
-    booleanValue.textContent = "True";
-  }
-}
-</script>
+</html>

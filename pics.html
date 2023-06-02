@@ -1,60 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Iconic Pictures</title>
-<meta name="viewport" content="width=device-width">
-  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</meta>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>My Iconic Pictures</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="material-components-web.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="material-components-web.js"></script>
+    </meta>
+    <script src="material-components-web.js"></script>
 </head>
 <body class="magenta-theme">
   <h1 class="text-center">My Iconic Pictures</h1>
   <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-<textarea class="mdc-avatar" alt="Avatar"></textarea>
-        <p class="mb-0">@bard</p>
-        <p>This is my drawer of iconic pictures. I can store up to 10 pictures in this drawer.</p>
+      <div class="row">
+          <div class="col-md-3">
+              <div class="mdc-avatar" alt="Avatar"></div>
+              <p class="mb-0">@bard</p>
+              <p>This is my drawer of iconic pictures. I can store up to 10 pictures in this drawer.</p>
+          </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <h3>Pictures</h3>
-        <div class="mdc-list">
-          <a href="#" class="mdc-list-item mdc-list-item-action">
-            <textarea class="mdc-avatar" alt="Avatar"></textarea>
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">Mona Lisa</h5>
-              <small class="text-muted">Leonardo da Vinci</small>
-            </div>
-          </a>
-          <a href="#" class="mdc-list-item mdc-list-item-action">
-         <textarea class="mdc-avatar" alt="Avatar"></textarea>
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">Starry Night</h5>
-              <small class="text-muted">Vincent van Gogh</small>
-            </div>
-          </a>
-          <a href="#" class="mdc-list-item mdc-list-item-action">
-          <textarea class="mdc-avatar" alt="Avatar"></textarea>
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">Guernica</h5>
-              <small class="text-muted">Pablo Picasso</small>
-            </div>
-          </a>
-        </div>
+      <div class="row">
+          <div class="col-md-6">
+              <h3>Pictures</h3>
+              <div class="mdc-list">
+                  <a href="#" class="mdc-list-item mdc-list-item-action">
+                      <div class="mdc-avatar" alt="Avatar"></div>
+                      <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">Mona Lisa</h5>
+                          <small class="text-muted">Leonardo da Vinci</small>
+                      </div>
+                  </a>
+                  <a href="#" class="mdc-list-item mdc-list-item-action">
+                      <div class="mdc-avatar" alt="Avatar"></div>
+                      <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">Starry Night</h5>
+                          <small class="text-muted">Vincent van Gogh</small>
+                      </div>
+                  </a>
+                  <a href="#" class="mdc-list-item mdc-list-item-action">
+                      <div class="mdc-avatar" alt="Avatar"></div>
+                      <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">Guernica</h5>
+                          <small class="text-muted">Pablo Picasso</small>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <h3>Add Picture</h3>
+              <form action="/" method="post">
+                  <input type="file" name="file">
+                  <input type="submit" value="Add">
+              </form>
+          </div>
       </div>
-      <div class="col-md-6">
-        <h3>Add Picture</h3>
-        <form action="/" method="post">
-          <input type="file" name="file">
-          <input type="submit" value="Add">
-        </form>
-      </div>
-    </div>  <footer class="magenta-theme">
-    <p class="magenta-theme">Copyright &copy; 2023 Social Media Website</p>
-  </footer>
-  </div>
+      <section>
+
+          <footer class="mdc-footer">
+              <div class="mdc-typography">
+                  <p class="magenta-theme"><a href="index.html">Copyright &copy; 2023 My Twitter Clone</a></p>
+                  <ul class="mdc-chips">
+                      <li class="mdc-chip">
+                          <a href="index2.html">Facebook</a>
+                      </li>
+                      <li class="mdc-chip">
+                          <a href="index3.html">Reddit</a>
+                      </li>
+                      <li class="mdc-chip">
+                          <a href="index4.html">404</a>
+                      </li>
+                      <li class="mdc-chip">
+                          <a href="copypasta.html">Copypasta</a>
+                      </li>
+                      <li class="mdc-chip">
+                          <a href="cryptocurrency.html">Shop</a>
+                      </li>
+                      <li class="mdc-chip">
+                          <a href="entry.html">Post</a>
+                      </li>
+                      <li class="mdc-chip">
+                          <a href="pics.html">Pics</a>
+                      </li>
+                      <li class="mdc-chip">
+                          <a href="secrets.html">Mail</a>
+                      </li>
+                      <li class="mdc-chip">
+                          <a href="wiki.html">Social Media</a>
+                      </li>
+                  </ul>
+              </div>
+          </footer>
+      </section>
+
 </body>
 </html>

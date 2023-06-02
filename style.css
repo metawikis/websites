@@ -1,59 +1,111 @@
-.magenta-theme {
-  --mdc-theme-primary: #FF00FF;
-  --mdc-theme-on-primary: #ffffff;
-  --mdc-theme-secondary: #ffe4e1;
-  --mdc-theme-on-secondary: #000000;
-  --mdc-theme-error: #ff0000;
-  --mdc-theme-on-error: #ffffff;
-  --mdc-theme-warning: #ffa500;
-  --mdc-theme-on-warning: #ffffff;
-  --mdc-theme-info: #00BCD4;
-  --mdc-theme-on-info: #ffffff;
-  --mdc-theme-accent: #00BCD4;
-  --mdc-theme-on-accent: #ffffff;
-  --mdc-theme-background: #ffffff;
-  --mdc-theme-on-background: #000000;
-  --mdc-theme-surface: #ffffff;
-  --mdc-theme-on-surface: #000000;
-  --mdc-theme-outline: #000000;
-  --mdc-theme-on-outline: #ffffff;
-  --mdc-theme-focus: #00BCD4;
-  --mdc-theme-on-focus: #ffffff;
-  --mdc-theme-hover: #00BCD4;
-  --mdc-theme-on-hover: #ffffff;
-  --mdc-theme-active: #00BCD4;
-  --mdc-theme-on-active: #ffffff;
-}
-
 /* Body */
 body {
-  font-family: Roboto, sans-serif;
-  color: #FF00FF;
+    font-family: Roboto, sans-serif;
+    color: #FF00FF;
+    /* Primary */
+    --magenta-primary: #FFe4e1;
+    --magenta-on-primary: #ffffff;
+    /* Secondary */
+    --magenta-secondary: #ffe4e1;
+    --magenta-on-secondary: #000000;
+    /* Error */
+    --magenta-error: #ff0000;
+    --magenta-on-error: #ffffff;
+    /* Warning */
+    --magenta-warning: #ffa500;
+    --magenta-on-warning: #ffffff;
+    /* Info */
+    --magenta-info: #00BCD4;
+    --magenta-on-info: #ffffff;
+    /* Accent */
+    --magenta-accent: #00BCD4;
+    --magenta-on-accent: #ffffff;
+    /* Background */
+    --magenta-background: #ffffff;
+    --magenta-on-background: #000000;
+    /* Surface */
+    --magenta-surface: #ffffff;
+    --magenta-on-surface: #000000;
+    /* Outline */
+    --magenta-outline: #000000;
+    --magenta-on-outline: #ffffff;
+    /* Focus */
+    --magenta-focus: #00BCD4;
+    --magenta-on-focus: #ffffff;
+    /* Hover */
+    --magenta-hover: #00BCD4;
+    --magenta-on-hover: #ffffff;
+    /* Active */
+    --magenta-active: #00BCD4;
+    --magenta-on-active: #ffffff;
 }
 
-/* Header */
-/* Magenta Copypasta */
-.magenta-theme a {
-  color: var(--mdc-theme-primary);
+/* MDC Material Elements */
+
+.mdc-button {
+    background-color: var(--magenta-primary);
+    color: var(--magenta-on-primary);
 }
 
-.magenta-theme h1 {
-  color: var(--mdc-theme-primary);
+.mdc-card {
+    background-color: var(--magenta-surface);
+    color: var(--magenta-on-surface);
 }
 
-.magenta-theme h2 {
-  color: var(--mdc-theme-primary);
+.mdc-checkbox {
+    color: var(--magenta-on-primary);
 }
 
-.magenta-theme p {
-  color: var(--mdc-theme-primary);
+.mdc-chip {
+    background-color: var(--magenta-secondary);
+    color: var(--magenta-on-secondary);
 }
 
-.magenta-theme .button {
-  background-color: var(--mdc-theme-primary);
+.mdc-fab {
+    background-color: var(--magenta-accent);
+    color: var(--magenta-on-accent);
 }
 
-.magenta-theme .button:hover {
-  background-color: var(--mdc-theme-primary);
-  color: var(--mdc-theme-on-primary);
+.mdc-form-field {
+    background-color: var(--magenta-background);
+    color: var(--magenta-on-background);
+}
+
+.mdc-list {
+    background-color: var(--magenta-surface);
+    color: var(--magenta-on-surface);
+}
+
+.mdc-menu {
+    background-color: var(--magenta-surface);
+    color: var(--magenta-on-surface);
+}
+
+.mdc-progress {
+    background-color: var(--magenta-primary);
+    color: var(--magenta-on-primary);
+}
+
+.mdc-radio {
+    color: var(--magenta-on-primary);
+}
+
+.mdc-select {
+    background-color: var(--magenta-surface);
+    color: var(--magenta-on-surface);
+}
+
+.mdc-slider {
+    background-color: var(--magenta-surface);
+    color: var(--magenta-on-surface);
+}
+
+.mdc-snackbar {
+    background-color: var(--magenta-surface);
+    color: var(--magenta-on-surface);
+}
+
+.mdc-text-field {
+    background-color: var(--magenta-background);
+    color: var(--magenta-on-background);
 }

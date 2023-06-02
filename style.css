@@ -1,58 +1,46 @@
-/* Body */
-body {
-    font-family: Roboto, sans-serif;
-    color: #FF00FF;
-    /* Primary */
-    --magenta-primary: #FFe4e1;
-    --magenta-on-primary: #ffffff;
-    /* Secondary */
-    --magenta-secondary: #ffe4e1;
-    --magenta-on-secondary: #000000;
-    /* Error */
-    --magenta-error: #ff0000;
-    --magenta-on-error: #ffffff;
-    /* Warning */
-    --magenta-warning: #ffa500;
-    --magenta-on-warning: #ffffff;
-    /* Info */
-    --magenta-info: #00BCD4;
-    --magenta-on-info: #ffffff;
-    /* Accent */
-    --magenta-accent: #00BCD4;
-    --magenta-on-accent: #ffffff;
-    /* Background */
-    --magenta-background: #ffffff;
-    --magenta-on-background: #000000;
-    /* Surface */
-    --magenta-surface: #ffffff;
-    --magenta-on-surface: #000000;
-    /* Outline */
-    --magenta-outline: #000000;
-    --magenta-on-outline: #ffffff;
-    /* Focus */
-    --magenta-focus: #00BCD4;
-    --magenta-on-focus: #ffffff;
-    /* Hover */
-    --magenta-hover: #00BCD4;
-    --magenta-on-hover: #ffffff;
-    /* Active */
-    --magenta-active: #00BCD4;
-    --magenta-on-active: #ffffff;
-}
+* {
+            /* Primary */
+            --magenta-primary: #D81B60;
+            --magenta-on-primary: #FFFFFF;
+            /* Secondary */
+            --magenta-secondary: #FFFFFF;
+            --magenta-on-secondary: #FFFFFF;
+            /* Error */
+            --magenta-error: #FF0000;
+            --magenta-on-error: #FFFFFF;
+            /* Warning */
+            --magenta-warning: #FFFF00;
+            --magenta-on-warning: #FFFFFF;
+            /* Info */
+            --magenta-info: #0000FF;
+            --magenta-on-info: #FFFFFF;
+            /* Accent */
+            --magenta-secondary: #FF00FF;
+            /* Background */
+            --magenta-background: #FAFAFA;
+            --magenta-on-background: #FFFFFF;
+            /* Surface */
+            --magenta-surface: #FAFAFA;
+            /* Outline */
+            --magenta-outline: #00BCD4;
+            /* Focus */
+            --magenta-focus: #FFFFFF;
+            /* Hover */
+            --magenta-hover: #00BCD4;
+            /* Active */
+            --magenta-active: #00BCD4;
+        }
 
-/* MDC Material Elements */
 
-.mdc-button {
-    background-color: var(--magenta-primary);
-    color: var(--magenta-on-primary);
-}
+/* Material Components */
 
 .mdc-card {
-    background-color: var(--magenta-surface);
-    color: var(--magenta-on-surface);
+    background-color: var(--magenta-focus);
+    color: var(--magenta-info);
 }
 
-.mdc-checkbox {
+.mdc-button {
+    background-color: var(--magenta-error);
     color: var(--magenta-on-primary);
 }
 
@@ -62,23 +50,23 @@ body {
 }
 
 .mdc-fab {
-    background-color: var(--magenta-accent);
-    color: var(--magenta-on-accent);
+    background-color: var(--magenta-secondary);
+    color: #EE00EE color: var(--magenta-on-secondary);
 }
 
 .mdc-form-field {
-    background-color: var(--magenta-background);
-    color: var(--magenta-on-background);
+    background-color: var(--magenta-error);
+    color: var(--magenta-active);
 }
 
 .mdc-list {
-    background-color: var(--magenta-surface);
-    color: var(--magenta-on-surface);
+    background-color: var(--magenta-on-secondary);
+    color: var(--magenta-active);
 }
 
 .mdc-menu {
-    background-color: var(--magenta-surface);
-    color: var(--magenta-on-surface);
+    background-color: var(--magenta-on-secondary);
+    color: var(--magenta-active);
 }
 
 .mdc-progress {
@@ -87,25 +75,71 @@ body {
 }
 
 .mdc-radio {
-    color: var(--magenta-on-primary);
+    color: var(--magenta-active);
 }
 
 .mdc-select {
-    background-color: var(--magenta-surface);
-    color: var(--magenta-on-surface);
+    background-color: var(--magenta-on-secondary);
+    color: var(--magenta-active);
 }
 
 .mdc-slider {
-    background-color: var(--magenta-surface);
-    color: var(--magenta-on-surface);
+    background-color: var(--magenta-on-secondary);
+    color: var(--magenta-active);
 }
 
 .mdc-snackbar {
-    background-color: var(--magenta-surface);
-    color: var(--magenta-on-surface);
+    background-color: var(--magenta-on-secondary);
+    color: var(--magenta-active);
 }
 
-.mdc-text-field {
-    background-color: var(--magenta-background);
-    color: var(--magenta-on-background);
+body {
+    background-color: var(--magenta-active);
 }
+
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--magenta-secondary);
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: var(--magenta-primary);
+}
+
+a {
+    color: var(--magenta-accent);
+    text-decoration: none;
+}
+
+    a:hover {
+        color: var(--magenta-on-accent);
+        text-decoration: underline;
+    }
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--magenta-outline);
+    color: var(--magenta-primary);
+    background-color: var(--magenta-on-primary);
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--magenta-primary);
+    background-color: var(--magenta-on-primary);
+    border: 1px solid var(--magenta-outline);
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: var(--magenta-primary);
+        color: var(--magenta-on-primary);
+    }

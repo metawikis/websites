@@ -1,68 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <title>My Twitter Clone</title>
-    <meta name="viewport" content="width=device-width">
-    <link href="material-components-web.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="material-components-web.js"></script>
-</head>
-<body class="magenta-theme container d-flex flex-column h-100">
-    <h1 class="text-center">My Twitter Clone</h1>
-    <div class="container magenta-theme">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="mdc-card well">
-                    <div class="mdc-card mdc-card__header">
-                        <h3 class="mdc-card mdc-card__title">Home</h3>
-                    </div>
-                    <div class="mdc-card mdc-card__content">
+<html lang="en">  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="material-components-web.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.theme.css">
+    <link rel="stylesheet" href="https://unpkg.com/material-design-lite@1.3.0/material.min.css">
+ </head>
+<body>
+    <div class="mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header mdl-layout__header--waterfall">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Material Design Webpage</span>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation">
                         <ul class="mdc-chips">
                             <li class="mdc-chip">
-                                <a href="index2.html">Facebook</a>
+                                <a href="index2.html">Profile</a>
                             </li>
                             <li class="mdc-chip">
-                                <a href="index3.html">Reddit</a>
+                                <a href="index3.html">Feed</a>
                             </li>
                             <li class="mdc-chip">
                                 <a href="index4.html">404</a>
                             </li>
                             <li class="mdc-chip">
-                                <a href="copypasta.html">Copypasta</a>
+                                <a href="copypasta.html">Posts</a>
                             </li>
                             <li class="mdc-chip">
-                                <a href="cryptocurrency.html">Shop</a>
+                                <a href="cryptocurrency.html">Albums</a>
                             </li>
                             <li class="mdc-chip">
                                 <a href="entry.html">Post</a>
                             </li>
                             <li class="mdc-chip">
-                                <a href="pics.html">Pics</a>
+                                <a href="pics.html">Photos</a>
                             </li>
                             <li class="mdc-chip">
                                 <a href="secrets.html">Mail</a>
                             </li>
                             <li class="mdc-chip">
-                                <a href="wiki.html">Social Media</a>
+                                <a href="wiki.html">Groups</a>
                             </li>
-                        </ul>                        <a href="md-components.html">HTML components</a>
+                        </ul>                            </nav>
+            </div>                      </div>          
 
+        </header>
+  
+
+
+    <!-- Card -->
+    <!-- mdc-card well -->
+        <div class="mdc-card mdc-card__header">
+    <h1 class="text-center">Home</h1>
+    <div class="container magenta-theme">
+        <div class="row">
+                <div class="mdc-card">
+                    <div class="mdc-card mdc-card__header">
+                        <h3 class="mdc-card mdc-card__title">Home</h3>
                     </div>
+                
                 </div>
             </div>
+        </div>    <h1 class="text-center">My Facebook Clone</h1>
+</div>
+    <!-- mdc-card well -->
+    <div class="container magenta-theme">
+
+        <div class="row">
+
+    <div class="col-md-6">
+        <div class="mdc-card mdc-card__header">
+            <h3 class="mdc-card mdc-card__title">News Feed</h3>
         </div>
-    </div><footer class="magenta-theme">
-        <p class="magenta-theme"><a href="index.html">Copyright &copy; 2023 My Twitter Clone</a></p>
-    </footer>
+        <div class="mdc-card mdc-card__content">
+            <ul class="mdc-list">
+                <li class="mdc-list-item">
+                    <a href="#" class="mdc-list-item__action">
+                        <div class="mdc-list-item__avatar" alt="Avatar"></div>
+                        <small class="text-muted">@bard</small>
+                    </a>
+                    <p class="mdc-list-item__text mb-1">This is a photo of a cat.</p>
+                    <small class="text-muted">1d ago</small>
+                </li>
+                <li class="mdc-list-item">
+                    <a href="#" class="mdc-list-item__action">
+                        <div class="mdc-list-item__avatar" alt="Avatar"></div>
+                        <small class="text-muted">@bard</small>
+                    </a>
+                    <p class="mdc-list-item__text mb-1">This is a photo of a dog.</p>
+                    <small class="text-muted">1d ago</small>
+                </li>
+                <li class="mdc-list-item">
+                    <a href="#" class="mdc-list-item__action">
+                        <div class="mdc-list-item__avatar" alt="Avatar"></div>
+                        <small class="text-muted">@bard</small>
+                    </a>
+                    <p class="mdc-list-item__text mb-1">This is a photo of a bird.</p>
+                    <small class="text-muted">1d ago</small>
+                </li>
+
+            </ul>
+        </div>
+    </div>    <div class="col-md-6">
+
+        <h2 class="text-center">Compose Post</h2>
+        <form action="/" method="post">
+            <input type="text" name="name" placeholder="Enter your name">
+            <input type="text" name="post" placeholder="What's on your mind?">
+            <input type="file" name="file">
+            <input type="submit" value="Post">
+        </form>
+        </div>
+    </div>   
+
+    <section>
+
+        <footer class="mdc-footer">
+            <div class="mdc-typography">
+                <p class="magenta-theme"><a href="index.html">Copyright &copy; 2023 My Twitter Clone</a></p>
+                <ul class="mdc-chips">
+                    <li class="mdc-chip">
+                        <a href="index2.html">Facebook</a>
+                    </li>
+                    <li class="mdc-chip">
+                        <a href="index3.html">Reddit</a>
+                    </li>
+                    <li class="mdc-chip">
+                        <a href="index4.html">404</a>
+                    </li>
+                    <li class="mdc-chip">
+                        <a href="copypasta.html">Copypasta</a>
+                    </li>
+                    <li class="mdc-chip">
+                        <a href="cryptocurrency.html">Shop</a>
+                    </li>
+                    <li class="mdc-chip">
+                        <a href="entry.html">Post</a>
+                    </li>
+                    <li class="mdc-chip">
+                        <a href="pics.html">Pics</a>
+                    </li>
+                    <li class="mdc-chip">
+                        <a href="secrets.html">Mail</a>
+                    </li>
+                    <li class="mdc-chip">
+                        <a href="wiki.html">Social Media</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </section>
 
 </body>
 </html>

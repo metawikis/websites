@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Design Page with Address Data</title>
+    <!-- Add Material Design for Three.js (MD3) library -->
+    <script src="path/to/md3.js"></script>
+    <!-- Include the Material Design CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/material-design-lite@1.3.0/material.min.css">
+    <style>
+        /* Additional custom CSS styles */
+        .complex-card {
+            width: 300px;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        /* Styling for social icons */
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #757575;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+
+        /* Styling for address data */
+        .address {
+            margin-top: 20px;
+        }
+
+        .address ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .address li::before {
+            content: "\2022"; /* Bullet point for list items */
+            margin-right: 5px;
+        }
+    </style>
+    <!-- Include the Material Icons library -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">Material Design Page with Address Data</span>
+        </div>
+    </header>
+    <main class="mdl-layout__content">
+        <div class="page-content">
+            <!-- A complex card with an image, title, text, and multiple actions -->
+            <div class="mdl-card complex-card mdl-shadow--4dp">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Complex Card</h2>
+                </div>
+
+                <div class="mdl-card__supporting-text">
+                    This is a Material Design card component with an image and multiple actions.
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a href="#" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        <i class="material-icons">add</i> Action 1
+                    </a>
+                    <a href="#" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        <i class="material-icons">delete</i> Action 2
+                    </a>
+                </div>
+            </div>
+               
+                    <h2 class="mdl-card__title-text">Form Card</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class="mdl-textfield__input" type="text" id="sample1">
+                            <label class="mdl-textfield__label" for="sample1">Text input</label>
+                        </div>
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                            <i class="material-icons">send</i> Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <!-- A complex card with a form inside -->
+            <div class="mdl-card complex-card mdl-shadow--4dp">  <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="material-icons">facebook</i>
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <i class="material-icons">twitter</i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="material-icons">instagram</i>
+                </a>
+            </div>
+
+            <!-- Address Data -->
+            <div class="address">
+                <h3>Our Address:</h3>
+                <address>
+                    <ul>
+                        <li>123 Example Street</li>
+                        <li>Cityville, State 12345</li>
+                        <li>Country</li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+              
+
+          
+    </main>
+</body>
+</html>
